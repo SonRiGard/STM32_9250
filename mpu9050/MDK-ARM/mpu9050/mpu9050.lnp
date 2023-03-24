@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"mpu9050\startup_stm32f103xb.o"
+"mpu9050\mpu9250.o"
+"mpu9050\kalman.o"
+"mpu9050\madgwick.o"
+"mpu9050\main.o"
+"mpu9050\stm32f1xx_it.o"
+"mpu9050\stm32f1xx_hal_msp.o"
+"mpu9050\stm32f1xx_hal_gpio_ex.o"
+"mpu9050\stm32f1xx_hal_i2c.o"
+"mpu9050\stm32f1xx_hal.o"
+"mpu9050\stm32f1xx_hal_rcc.o"
+"mpu9050\stm32f1xx_hal_rcc_ex.o"
+"mpu9050\stm32f1xx_hal_gpio.o"
+"mpu9050\stm32f1xx_hal_dma.o"
+"mpu9050\stm32f1xx_hal_cortex.o"
+"mpu9050\stm32f1xx_hal_pwr.o"
+"mpu9050\stm32f1xx_hal_flash.o"
+"mpu9050\stm32f1xx_hal_flash_ex.o"
+"mpu9050\stm32f1xx_hal_exti.o"
+"mpu9050\stm32f1xx_hal_tim.o"
+"mpu9050\stm32f1xx_hal_tim_ex.o"
+"mpu9050\stm32f1xx_hal_uart.o"
+"mpu9050\system_stm32f1xx.o"
+--strict --scatter "mpu9050\mpu9050.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mpu9050.map" -o mpu9050\mpu9050.axf
